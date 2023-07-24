@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BankSampah">
         <activity
+            android:name=".AkunActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PesanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LokasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RiwayatActivity"
+            android:exported="false" />
+        <activity
             android:name=".SyaratDanKetentuanActivity"
             android:exported="false" />
         <activity

@@ -4,17 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_screen"
-    android:id="@+id/mainContainer"
-    tools:context=".MainActivity">
+    tools:context=".RiwayatActivity">
 
     <TextView
-        android:text="Home"
+        android:text="Riwayat"
         android:textSize="56sp"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-    
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
@@ -24,7 +22,5 @@
         app:menu="@menu/bottom_nav_menu"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"/>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
