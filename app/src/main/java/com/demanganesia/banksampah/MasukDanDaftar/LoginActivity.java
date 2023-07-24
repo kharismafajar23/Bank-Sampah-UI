@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import com.demanganesia.banksampah.MainActivity;
 import com.demanganesia.banksampah.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -30,5 +31,10 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(keDaftar);
             }
         });
+    }
+
+    public void Masuk(View view) {
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+        finish();
     }
 }
