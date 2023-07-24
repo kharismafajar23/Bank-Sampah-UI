@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Bank Sampah</string>
+
+    <!--    On Board Screen-->
+    <string name="title_onboard_1">Sampahocity</string>
+    <string name="title_onboard_2">Reuse</string>
+    <string name="title_onboard_3">Reduce</string>
+    <string name="title_onboard_4">Recycle</string>
+
+    <string name="desc_onboard_1">Selamat Datang. Kelola sampahmu, lalu kamu bisa menjadikan sampahmu menjadi cuan!</string>
+    <string name="desc_onboard_2">Reuse berarti menggunakan kembali sampah yang masih dapat digunakan untuk fungsi yang sama ataupun fungsi lainnya.</string>
+    <string name="desc_onboard_3">Reduce berarti mengurangi segala sesuatu yang mengakibatkan sampah.</string>
+    <string name="desc_onboard_4">Recycle berarti mengolah kembali sampah menjadi barang atau produk baru yang bermanfaat.</string>
+
+    <!--    Syarat dan Ketentuan-->
+    <string name="syarat_dan_ketentuan_title">Syarat &amp; Ketentuan Bank Sampah</string>
+    <string name="syarat_desc">Syarat :\n1. Harus mempunyai akun\n2. Merupakan nasabah bank sampah\n3. Telah melakukan registrasi dan aktivasi bank sampah\n4. Nasabah harus memilah sampah secara mandiri\n5. dll</string>
+    <string name="ketentuan">Ketentuan"\n1. Pengguna dapat menggunakan aplikasi jika sudah mempunyai aplikasi\n2. dll.</string>
+    <string name="title_activity_bottom_nav">BottomNavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
