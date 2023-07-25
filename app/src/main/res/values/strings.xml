@@ -20,6 +20,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  Main Activity - Menu Description  -->
+    <string name="bank_sampah_desc">Buang sampahmu dengan bank sampah untuk mendapatkan poin.</string>
+    <string name="tukar_poin_desc">Tukarkan poin yang didapat dari bank sampah menjadi sembako.</string>
+    <string name="sampah_harian_desc">Buang sampahmu dengan cara berlangganan paket.</string>
 </resources>

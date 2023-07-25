@@ -7,24 +7,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 
 import com.demanganesia.banksampah.MasukDanDaftar.DaftarActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class KategoriBankSampahActivity extends AppCompatActivity {
 
     BottomNavigationView bottomBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        //menghilangkan status bar
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setContentView(R.layout.activity_kategori_bank_sampah);
 
         bottomBar = findViewById(R.id.bottomBar);
-        bottomBar.setSelectedItemId(R.id.home);
 
         bottomBar.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -32,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
                 switch (item.getItemId()) {
                     case R.id.home:
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.riwayat:
                         startActivity(new Intent(getApplicationContext(), RiwayatActivity.class));
@@ -59,7 +58,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void keKategoriSampah(View view) {
-        startActivity(new Intent(MainActivity.this, KategoriBankSampahActivity.class));
+    public void kembali(View view) {
+        onBackPressed();
+    }
+
+    public void keSNK(View view) {
+        startActivity(new Intent(KategoriBankSampahActivity.this, SyaratDanKetentuanActivity.class));
     }
 }
