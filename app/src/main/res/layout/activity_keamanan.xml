@@ -52,10 +52,11 @@
                 android:text="Ubah Password Akun" />
 
             <ImageView
-                android:src="@drawable/ic_next"
-                android:layout_alignParentEnd="true"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_next"
+                android:layout_centerVertical="true"/>
 
         </RelativeLayout>
 
@@ -74,7 +75,8 @@
                 android:src="@drawable/ic_next"
                 android:layout_alignParentEnd="true"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"/>
 
         </RelativeLayout>
 

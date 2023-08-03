@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FaqActivity">
+    tools:context=".PusatBantuanActivity">
 
     <LinearLayout
         android:id="@+id/LL1"
@@ -36,7 +36,7 @@
                 style="@style/title_screen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FAQ" />
+                android:text="Pusat Bantuan" />
         </LinearLayout>
 
         <RelativeLayout

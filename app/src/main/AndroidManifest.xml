@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BankSampah">
         <activity
+            android:name=".PusatBantuanActivity"
+            android:exported="false" />
+        <activity
             android:name=".FaqActivity"
             android:exported="false" />
         <activity
