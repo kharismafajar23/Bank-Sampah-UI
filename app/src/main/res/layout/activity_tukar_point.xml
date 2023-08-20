@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    tools:context=".TukarPointActivity">
+
+    <RelativeLayout
+        android:id="@+id/RLTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:paddingTop="28dp"
+        android:paddingRight="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/Btn_kembali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14sp"
+                android:onClick="kembali"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                style="@style/title_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tukar Point" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_search" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:onClick="keRiwayatTukarPoin"
+                android:src="@drawable/ic_history" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/CL_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_button"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RLTop">
+
+        <ImageView
+            android:id="@+id/IV_foto_profil"
+            android:src="@drawable/foto_profil_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/TV_username"
+            android:text="Hi, Jessica"
+            android:textColor="@color/main_black"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="18dp"
+            app:layout_constraintStart_toEndOf="@+id/IV_foto_profil"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:text="Apa ada point yang ingin kamu tukar?"
+            android:textSize="12sp"
+            android:textColor="@color/green_text"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/TV_username"
+            app:layout_constraintTop_toBottomOf="@+id/TV_username" />
+
+        <TextView
+            android:id="@+id/TV_koin"
+            android:text="0"
+            android:textColor="@color/main_black"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter_semi_bold"
+            android:drawableLeft="@drawable/ic_koin"
+            android:drawablePadding="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_redeem"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CL_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Reedem Your Points Now !"
+            style="@style/title_screen"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            app:dividerColor="@color/light_green"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toBottomOf="@+id/LL_redeem"
+        android:padding="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Beras -->
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="17dp"
+            android:paddingTop="15dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/beras_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Beras 2kg"
+                android:textColor="@color/main_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="2100 poin"
+                android:textColor="@color/green_text"
+                android:textSize="12sp" />
+
+            <Button
+                style="@style/button_paket"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_gravity="center"
+                android:onClick="keJemputAtauAmbil"
+                android:text="Tukar" />
+
+
+        </LinearLayout>
+
+        <!-- Minyak -->
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="17dp"
+            android:paddingTop="15dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="15dp"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/minyak_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Minyak 2L"
+                android:textColor="@color/main_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="1850 poin"
+                android:textColor="@color/green_text"
+                android:textSize="12sp" />
+
+            <Button
+                style="@style/button_paket"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_gravity="center"
+                android:onClick="keJemputAtauAmbil"
+                android:text="Tukar" />
+
+
+        </LinearLayout>
+
+        <!-- Gula -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="17dp"
+            android:paddingTop="15dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/gula_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Gula 1kg"
+                android:textColor="@color/main_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="1500 poin"
+                android:textColor="@color/green_text"
+                android:textSize="12sp" />
+
+            <Button
+                style="@style/button_paket"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_gravity="center"
+                android:onClick="keJemputAtauAmbil"
+                android:text="Tukar" />
+
+
+        </LinearLayout>
+
+        <!-- Telur -->
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="17dp"
+            android:paddingTop="15dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="15dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+            <ImageView
+                android:layout_width="122dp"
+                android:layout_height="104dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/telur_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Beras 2kg"
+                android:textColor="@color/main_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_regular"
+                android:text="2100 poin"
+                android:textColor="@color/green_text"
+                android:textSize="12sp" />
+
+            <Button
+                style="@style/button_paket"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_gravity="center"
+                android:onClick="keJemputAtauAmbil"
+                android:text="Tukar" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@drawable/bg_navbar"
+        app:labelVisibilityMode="labeled"
+        android:focusedByDefault="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

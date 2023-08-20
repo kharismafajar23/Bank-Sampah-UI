@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    tools:context=".JemputAtauAmbilActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="28dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/LL_kembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/Btn_kembali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14sp"
+                android:onClick="kembali"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                style="@style/title_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tukar Point" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/jemput_ambil_txt"
+            android:text="Pilih metode untuk mendapatkan hadiahmu!"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/green_text"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LL_kembali" />
+
+        <!-- LL ANtar -->
+        <LinearLayout
+            android:id="@+id/LL_antar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outline_hijau"
+            android:orientation="vertical"
+            android:paddingLeft="18dp"
+            android:paddingTop="13dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="13dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/jemput_ambil_txt">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="119dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/paket_reguler_img" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TV_antar_title"
+                        android:text="Antar ke rumah"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/inter_regular"
+                        android:textColor="@color/main_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:text="@string/antar_desc"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/inter_regular"
+                        android:textColor="@color/green_text"
+                        android:alpha=".7"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/TV_antar_title" />
+
+                    <Button
+                        android:onClick="keAntarHadiah"
+                        android:layout_width="67dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:background="@drawable/bg_button"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="7dp"
+                        android:text="pilih"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- LL Ambil -->
+        <LinearLayout
+            android:id="@+id/LL_ambil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outline_hijau"
+            android:orientation="vertical"
+            android:paddingLeft="18dp"
+            android:paddingTop="13dp"
+            android:paddingRight="18dp"
+            android:paddingBottom="13dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/LL_antar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="119dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ambil_img" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TV_ambil_title"
+                        android:text="Ambil Hadiah"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/inter_regular"
+                        android:textColor="@color/main_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:text="@string/ambil_desc"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/inter_regular"
+                        android:textColor="@color/green_text"
+                        android:alpha=".7"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/TV_ambil_title" />
+
+                    <Button
+                        android:onClick="keAmbilHadiah"
+                        android:layout_width="67dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:background="@drawable/bg_button"
+                        android:paddingTop="7dp"
+                        android:paddingBottom="7dp"
+                        android:text="pilih"
+                        android:textAlignment="center"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/syarat_n_ketentuan_ambil"
+            android:textSize="10sp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/green_text"
+            android:lineHeight="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LL_ambil" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@drawable/bg_navbar"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

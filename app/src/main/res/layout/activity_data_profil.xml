@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    tools:context=".DataProfilActivity">
+
+    <LinearLayout
+        android:id="@+id/LLTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:paddingTop="28dp"
+        android:paddingRight="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Btn_kembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14sp"
+            android:onClick="kembali"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            style="@style/title_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Profil" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:scrollbarThumbVertical="@null"
+        app:layout_constraintTop_toBottomOf="@+id/LLTop"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Name -->
+            <TextView
+                style="@style/pusat_bantuan_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+
+            <EditText
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@drawable/ic_username"
+                android:hint="Masukkan Username"
+                android:inputType="text" />
+
+            <!-- Username -->
+            <TextView
+                style="@style/pusat_bantuan_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username" />
+
+            <EditText
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@drawable/ic_username"
+                android:hint="Masukkan Username"
+                android:inputType="text" />
+
+            <!-- Email -->
+            <TextView
+                style="@style/pusat_bantuan_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Addres" />
+
+            <EditText
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@drawable/ic_email"
+                android:hint="Masukkan Email"
+                android:inputType="textEmailAddress" />
+
+            <!-- Mobile Phone -->
+            <TextView
+                style="@style/pusat_bantuan_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Phone" />
+
+            <EditText
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:hint="Masukkan No HP"
+                android:inputType="phone" />
+
+            <!-- Birth Date -->
+            <TextView
+                style="@style/pusat_bantuan_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birth Date" />
+
+            <EditText
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@drawable/ic_birth_date"
+                android:hint="Masukkan Tanggal Lahir"
+                android:inputType="date" />
+
+            <!-- Birth Date -->
+            <TextView
+                style="@style/pusat_bantuan_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender" />
+
+            <Spinner
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@drawable/ic_gender"
+                android:entries="@array/gender_array"
+                android:prompt="@string/dropdown_gender"/>
+
+            <!-- Birth Date -->
+            <TextView
+                style="@style/pusat_bantuan_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Addres" />
+
+            <EditText
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:drawableLeft="@drawable/ic_addres"
+                android:hint="Masukkan alamat"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:fontFamily="@font/inter_bold"
+                android:onClick="keUbahPass"
+                android:text="Ubah Password?"
+                android:textSize="14sp" />
+
+            <Button
+                style="@style/primary_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:onClick="btnSimpan"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@drawable/bg_navbar"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

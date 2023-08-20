@@ -19,6 +19,75 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BankSampah">
         <activity
+            android:name=".SaldoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StatusNotaHadiahAntarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryTukarPoinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotaHadiahAntarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuktiHadiahAntarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuktiAmbilHadiahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JemputAtauAmbilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TukarPointActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PembayaranBerhasilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RiwayatBankSampahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RiwayatSampahHarianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Detail_Paket_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Paket_Premium_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".PaketRegulerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Reg_Pickup_2_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".BuktiPoinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JemputSampahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RequestPickupMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TentangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DataProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuccesPickupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RequestPickupActivity"
+            android:exported="false" />
+        <activity
             android:name=".PusatBantuanActivity"
             android:exported="false" />
         <activity

@@ -4,14 +4,151 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_screen"
     tools:context=".PesanActivity">
 
+    <LinearLayout
+        android:id="@+id/LLTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:paddingTop="28dp"
+        android:paddingRight="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Btn_kembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14sp"
+            android:onClick="kembali"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            style="@style/title_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesan" />
+    </LinearLayout>
+
     <TextView
-        android:text="Pesan"
-        android:textSize="56sp"
-        android:gravity="center"
+        android:id="@+id/TV_bulan"
+        android:text="Oktober 2022"
+        android:textSize="16dp"
+        android:fontFamily="@font/inter_medium"
+        android:textColor="@color/main_black"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLTop" />
+
+    <LinearLayout
+        android:id="@+id/LL_chat1"
+        android:background="@drawable/bg_list"
+        android:paddingTop="18dp"
+        android:paddingBottom="41dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:layout_marginTop="9dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/TV_bulan"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Penjemputan Sampah"
+            android:textSize="16dp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/main_black"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Klik pesan ini untuk melihat detail penjemputan sampah."
+            android:textSize="12dp"
+            android:lineHeight="20sp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/main_black"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_chat2"
+        android:background="@drawable/bg_list"
+        android:paddingTop="18dp"
+        android:paddingBottom="41dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/LL_chat1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Penjemputan Sampah"
+            android:textSize="16dp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/main_black"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Sampah kamu akan di pick up pada tanggal 12 November 2022."
+            android:textSize="12dp"
+            android:lineHeight="20sp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/main_black"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_chat3"
+        android:background="@drawable/bg_list"
+        android:paddingTop="18dp"
+        android:paddingBottom="41dp"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/LL_chat2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Selamat Datang"
+            android:textSize="16dp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="@color/main_black"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Selamat Datang di Sampahocity, kelola sampahmu, lalu kami bisa menjadikan sampahmu menjadi cuan!"
+            android:textSize="12dp"
+            android:lineHeight="20sp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/main_black"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomBar"

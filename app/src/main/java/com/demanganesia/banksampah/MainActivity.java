@@ -59,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void keTukarPoin(View view) {
+        startActivity(new Intent(MainActivity.this, TukarPointActivity.class));
+    }
+
     public void keKategoriSampah(View view) {
         startActivity(new Intent(MainActivity.this, KategoriBankSampahActivity.class));
     }

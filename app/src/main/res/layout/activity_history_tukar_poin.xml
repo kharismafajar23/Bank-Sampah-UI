@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    tools:context=".HistoryTukarPoinActivity">
+
+    <RelativeLayout
+        android:id="@+id/RL_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="28dp"
+        android:paddingTop="28dp"
+        android:paddingRight="28dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/Btn_kembali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14sp"
+                android:onClick="kembali"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                style="@style/title_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Tukar Poin" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_refresh" />
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/LLTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:paddingTop="28dp"
+        android:paddingRight="28dp">
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TV_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LLTop"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="24dp"
+        android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/main_black"
+        android:fontFamily="@font/inter_medium"
+        android:text="Urutkan berdasarkan bulan"
+        android:textColor="@color/main_black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/TV_tanggal"
+        style="@style/tgl_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_filter"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:text="Oktober 2022"
+        android:textColor="@color/putih" />
+
+    <LinearLayout
+        android:id="@+id/list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_tanggal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_list"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:paddingTop="18dp"
+        android:paddingRight="28dp"
+        android:paddingBottom="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/minyak2_img" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="Minyak Goreng Bimoli 2L"
+                android:textColor="@color/main_black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/inter_medium"
+                android:text="1850 Poin :)"
+                android:textColor="@color/main_black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_navbar"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

@@ -112,7 +112,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_bold"
-                    android:outlineAmbientShadowColor="@color/main_black"
+                    android:textColor="@color/main_black"
                     android:text="0"
                     android:textSize="16sp" />
 
@@ -160,7 +160,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_bold"
-                    android:outlineAmbientShadowColor="@color/main_black"
+                    android:textColor="@color/main_black"
                     android:text="Rp 0"
                     android:textSize="16sp" />
 
@@ -292,6 +292,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <Button
+                            android:onClick="keTukarPoin"
                             android:layout_width="67dp"
                             android:layout_height="26dp"
                             android:layout_gravity="bottom|center_horizontal"

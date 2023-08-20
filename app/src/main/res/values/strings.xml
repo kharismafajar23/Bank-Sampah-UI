@@ -25,4 +25,20 @@
     <string name="bank_sampah_desc">Buang sampahmu dengan bank sampah untuk mendapatkan poin.</string>
     <string name="tukar_poin_desc">Tukarkan poin yang didapat dari bank sampah menjadi sembako.</string>
     <string name="sampah_harian_desc">Buang sampahmu dengan cara berlangganan paket.</string>
+
+    <!-- Pilihan Jenis Kelamin -->
+    <string name="dropdown_gender">Select gender</string>
+    <string-array name="gender_array">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <!-- Jemput atau Ambil -->
+    <string name="antar_desc">Kami akan mengirimkan hadiah kepada anda saat mengambil sampah</string>
+    <string name="ambil_desc">Anda bisa langsung mengambil sembako anda di bank sampah terdekat</string>
+    <string name="syarat_n_ketentuan_ambil">Syarat Dan Ketentuan\n\n1. Pengambilan secara Antar ke Rumah akan dilakukan bersamaan dengan penjemputan sampah selanjutnya.\n2. Pengambilan sembako harus disertai bukti penukaran point.</string>
+    <string name="snk_bukti_ambil">Syarat dan Ketentuan:\n\n1. Harus menunjukan bukti untuk mengambil hadiah.\n2. Serahkan bukti kepada pengurus bank sampah.\n3. Maksimal pengambilan 3 hari.</string>
+
+    <string name="bukti_hadiah_antar_txt">Berikan bukti kode diatas kepada petugas bank sampah untuk ditukarkan dengan sembako yang sebelumnya sudah ditukarkan dengan poin :)</string>
+    <string name="snk_nota_hadiah_antar">Syarat dan Ketentuan:\n\n1. Harus menunjukan bukti untuk mengambil hadiah.\n2. Serahkan bukti kepada pengurus bank sampah.</string>
 </resources>

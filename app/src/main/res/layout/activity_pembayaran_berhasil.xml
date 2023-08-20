@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="28dp"
+    tools:context=".PembayaranBerhasilActivity">
+
+    <ImageView
+        android:src="@drawable/checklist_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Pembayaran Telah Dilakukan"
+        android:textSize="16sp"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/main_black"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="23dp"
+        android:paddingBottom="53dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Paket Premium A"
+                android:textSize="18sp"
+                android:textColor="@color/main_black"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/ic_trash_premium"
+                android:layout_width="26dp"
+                android:layout_height="26dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="5 Oktober 2022"
+            android:textSize="12sp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/green_text"
+            android:layout_gravity="center"
+            android:layout_marginBottom="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_jadwal"
+                android:layout_marginRight="37dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+
+            <TextView
+                android:text="3x Per Minggu"
+                android:textSize="12sp"
+                android:textColor="@color/main_black"
+                android:fontFamily="@font/inter_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_kalender"
+                android:layout_gravity="center"
+                android:layout_marginRight="37dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+
+            <TextView
+                android:text="Senin, Rabu &amp; Jumat"
+                android:textSize="12sp"
+                android:textColor="@color/main_black"
+                android:fontFamily="@font/inter_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_durasi"
+                android:layout_marginRight="37dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+
+            <TextView
+                android:text="1 Bulan"
+                android:textSize="12sp"
+                android:textColor="@color/main_black"
+                android:fontFamily="@font/inter_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Rp 15.000"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/main_black"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:text="Kembali"
+        android:onClick="btn_kembali"
+        style="@style/primary_button"
+        android:layout_gravity="clip_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

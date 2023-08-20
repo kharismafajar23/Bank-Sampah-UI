@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.WindowManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -54,5 +55,32 @@ public class AkunActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    public void kembali(View view) {
+        onBackPressed();
+    }
+
+    public void keDataProfil(View view) {
+        startActivity(new Intent(AkunActivity.this, DataProfilActivity.class));
+    }
+
+    public void keKeamanan(View view) {
+        startActivity(new Intent(AkunActivity.this, KeamananActivity.class));
+    }
+
+    public void keFAQ(View view) {
+        startActivity(new Intent(AkunActivity.this, FaqActivity.class));
+    }
+
+    public void kePusatBantuan(View view) {
+        startActivity(new Intent(AkunActivity.this, PusatBantuanActivity.class));
+    }
+
+    public void keTentang(View view) {
+        startActivity(new Intent(AkunActivity.this, TentangActivity.class));
+    }
+
+    public void keNotifikasi(View view) {
     }
 }

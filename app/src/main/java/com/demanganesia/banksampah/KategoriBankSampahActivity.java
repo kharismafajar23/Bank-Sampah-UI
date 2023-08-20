@@ -68,4 +68,8 @@ public class KategoriBankSampahActivity extends AppCompatActivity {
     public void keSNK(View view) {
         startActivity(new Intent(KategoriBankSampahActivity.this, SyaratDanKetentuanActivity.class));
     }
+
+    public void keRequestPickup(View view) {
+        startActivity(new Intent(KategoriBankSampahActivity.this, RequestPickupActivity.class));
+    }
 }

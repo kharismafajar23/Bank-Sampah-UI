@@ -133,6 +133,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <Button
+                            android:onClick="keRequestPickup"
                             android:layout_width="67dp"
                             android:layout_height="26dp"
                             android:layout_gravity="bottom|center_horizontal"
@@ -193,6 +194,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <Button
+                            android:onClick="keRequestPickup"
                             android:layout_width="67dp"
                             android:layout_height="26dp"
                             android:layout_gravity="bottom|center_horizontal"
@@ -253,6 +255,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <Button
+                            android:onClick="keRequestPickup"
                             android:layout_width="67dp"
                             android:layout_height="26dp"
                             android:layout_gravity="bottom|center_horizontal"
