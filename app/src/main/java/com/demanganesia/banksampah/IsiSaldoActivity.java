@@ -11,14 +11,14 @@ import android.view.WindowManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class SaldoActivity extends AppCompatActivity {
+public class IsiSaldoActivity extends AppCompatActivity {
 
     BottomNavigationView bottomBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_saldo);
+        setContentView(R.layout.activity_isi_saldo);
         //menghilangkan status bar
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -60,11 +60,7 @@ public class SaldoActivity extends AppCompatActivity {
         });
     }
 
-    public void keTukarPoin(View view) {
-        startActivity(new Intent(SaldoActivity.this, TukarPointActivity.class));
-    }
-
-    public void keIsiSaldo(View view) {
-        startActivity(new Intent(SaldoActivity.this, IsiSaldoActivity.class));
+    public void keIsiSaldoDetail(View view) {
+        startActivity(new Intent(IsiSaldoActivity.this, IsiSaldoDetailActivity.class));
     }
 }

@@ -19,6 +19,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BankSampah">
         <activity
+            android:name=".IsiSaldoDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IsiSaldoActivity"
+            android:exported="false" />
+        <activity
             android:name=".SaldoActivity"
             android:exported="false" />
         <activity
