@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="28dp"
+    tools:context=".DetailRiwayatSampahHarianActivity">
+
+    <ImageView
+        android:src="@drawable/checklist_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Pembayaran telah dilakukan"
+        android:textSize="18sp"
+        android:textColor="@color/main_black"
+        android:fontFamily="@font/inter_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:background="@drawable/bg_white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_marginBottom="60dp">
+
+        <TextView
+            android:id="@+id/TV_nama_paket"
+            android:text="Paket Premium A"
+            android:textSize="18dp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/main_black"
+            android:drawableRight="@drawable/ic_crown"
+            android:drawablePadding="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/TV_tanggal"
+            android:text="5 Oktober 2022"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="13dp"/>
+
+        <LinearLayout
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_jadwal"
+                android:layout_marginRight="18dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp"/>
+
+            <TextView
+                android:id="@+id/TV_waktu_penjemputan"
+                android:text="3x Per Minggu"
+                android:textSize="15sp"
+                android:textColor="@color/main_black"
+                android:fontFamily="@font/inter_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_kalender"
+                android:layout_marginRight="18dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp"/>
+
+            <TextView
+                android:id="@+id/TV_hari_penjemputan"
+                android:text="Senin, Rabu, Jumat"
+                android:textSize="15sp"
+                android:textColor="@color/main_black"
+                android:fontFamily="@font/inter_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_durasi"
+                android:layout_marginRight="18dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp"/>
+
+            <TextView
+                android:id="@+id/TV_durasi"
+                android:text="1 bulan"
+                android:textSize="15sp"
+                android:textColor="@color/main_black"
+                android:fontFamily="@font/inter_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TV_harga"
+            android:text="Rp 15.000"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/main_black"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:onClick="btn_kembali"
+        android:text="Kembali"
+        style="@style/primary_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

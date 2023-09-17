@@ -37,4 +37,8 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(new Intent(LoginActivity.this, MainActivity.class));
         finish();
     }
+
+    public void keLupaPassword(View view) {
+        startActivity(new Intent(LoginActivity.this, LupaPasswordActivity.class));
+    }
 }

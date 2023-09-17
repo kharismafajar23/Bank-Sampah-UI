@@ -19,6 +19,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BankSampah">
         <activity
+            android:name=".NotaHadiahAmbilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryTukarPoinAmbilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailRiwayatSampahHarianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuktiPoinRiwayatBankSampahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailPaketRegulerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuatPinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MasukDanDaftar.LupaPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".IsiSaldoDetailActivity"
             android:exported="false" />
         <activity
@@ -100,7 +124,7 @@
             android:name=".FaqActivity"
             android:exported="false" />
         <activity
-            android:name=".BuatPINActivity"
+            android:name=".MasukkanPINActivity"
             android:exported="false" />
         <activity
             android:name=".UbahPasswordActivity"

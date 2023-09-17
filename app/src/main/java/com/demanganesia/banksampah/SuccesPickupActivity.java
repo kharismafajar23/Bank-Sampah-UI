@@ -19,5 +19,6 @@ public class SuccesPickupActivity extends AppCompatActivity {
 
     public void keMain(View view) {
         startActivity(new Intent(SuccesPickupActivity.this, MainActivity.class));
+        finish();
     }
 }

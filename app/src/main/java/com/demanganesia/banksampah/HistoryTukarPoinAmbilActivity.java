@@ -11,20 +11,18 @@ import android.view.WindowManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class RiwayatSampahHarianActivity extends AppCompatActivity {
+public class HistoryTukarPoinAmbilActivity extends AppCompatActivity {
 
     BottomNavigationView bottomBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_riwayat_sampah_harian);
+        setContentView(R.layout.activity_history_tukar_poin_ambil);
         //menghilangkan status bar
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         bottomBar = findViewById(R.id.bottomBar);
-        bottomBar.setSelectedItemId(R.id.riwayat);
-
         bottomBar.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -65,46 +63,12 @@ public class RiwayatSampahHarianActivity extends AppCompatActivity {
         onBackPressed();
     }
 
-    public void keBankSampah(View view) {
-        startActivity(new Intent(RiwayatSampahHarianActivity.this, RiwayatActivity.class));
+    public void keNotaHadiahAmbil(View view) {
+        startActivity(new Intent(this, NotaHadiahAmbilActivity.class));
+    }
+
+    public void keAntarRumah(View view) {
+        startActivity(new Intent(this, HistoryTukarPoinActivity.class));
         finish();
-    }
-
-    public void keDetailSampahHarian1(View view) {
-        String namaPaket = "Paket Premium A";
-        String tanggal = "5 Oktober 2022";
-        String waktuPenjemputan = "3x Per Minggu";
-        String hariPenjemputan = "Senin, Rabu, Jumat";
-        String durasi = "1 bulan";
-        Number harga = 15000;
-
-        Intent keDetailSampahHarian1 = new Intent(this, DetailRiwayatSampahHarianActivity.class);
-        keDetailSampahHarian1.putExtra("namaPaket", namaPaket);
-        keDetailSampahHarian1.putExtra("tanggal", tanggal);
-        keDetailSampahHarian1.putExtra("waktuPenjemputan", waktuPenjemputan);
-        keDetailSampahHarian1.putExtra("hariPenjemputan", hariPenjemputan);
-        keDetailSampahHarian1.putExtra("durasi", durasi);
-        keDetailSampahHarian1.putExtra("harga", harga.toString());
-
-        startActivity(keDetailSampahHarian1);
-    }
-
-    public void keDetailSampahHarian2(View view) {
-        String namaPaket = "Paket Premium A";
-        String tanggal = "15 November 2022";
-        String waktuPenjemputan = "3x Per Minggu";
-        String hariPenjemputan = "Senin, Rabu, Jumat";
-        String durasi = "1 bulan";
-        Number harga = 15000;
-
-        Intent keDetailSampahHarian2 = new Intent(this, DetailRiwayatSampahHarianActivity.class);
-        keDetailSampahHarian2.putExtra("namaPaket", namaPaket);
-        keDetailSampahHarian2.putExtra("tanggal", tanggal);
-        keDetailSampahHarian2.putExtra("waktuPenjemputan", waktuPenjemputan);
-        keDetailSampahHarian2.putExtra("hariPenjemputan", hariPenjemputan);
-        keDetailSampahHarian2.putExtra("durasi", durasi);
-        keDetailSampahHarian2.putExtra("harga", harga.toString());
-
-        startActivity(keDetailSampahHarian2);
     }
 }

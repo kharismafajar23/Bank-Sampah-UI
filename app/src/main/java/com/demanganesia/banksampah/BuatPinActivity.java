@@ -9,49 +9,47 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 
-import com.demanganesia.banksampah.MasukDanDaftar.DaftarActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class BuatPinActivity extends AppCompatActivity {
 
     BottomNavigationView bottomBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_buat_pin);
         //menghilangkan status bar
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         bottomBar = findViewById(R.id.bottomBar);
-        bottomBar.setSelectedItemId(R.id.home);
-
+        bottomBar.setSelectedItemId(R.id.akun);
         bottomBar.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 switch (item.getItemId()) {
                     case R.id.home:
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        finish();
+                        overridePendingTransition(1,1);
                         return true;
                     case R.id.riwayat:
                         startActivity(new Intent(getApplicationContext(), RiwayatActivity.class));
                         finish();
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(1,1);
                         return true;
                     case R.id.lokasi:
                         startActivity(new Intent(getApplicationContext(), LokasiActivity.class));
                         finish();
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(1,1);
                         return true;
                     case R.id.pesan:
                         startActivity(new Intent(getApplicationContext(), PesanActivity.class));
                         finish();
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(1,1);
                         return true;
                     case R.id.akun:
-                        startActivity(new Intent(getApplicationContext(), AkunActivity.class));
-                        finish();
-                        overridePendingTransition(0,0);
                         return true;
                 }
                 return false;
@@ -59,19 +57,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void keTukarPoin(View view) {
-        startActivity(new Intent(MainActivity.this, TukarPointActivity.class));
+    public void IV_kembali(View view) {
+        onBackPressed();
     }
 
-    public void keKategoriSampah(View view) {
-        startActivity(new Intent(MainActivity.this, KategoriBankSampahActivity.class));
-    }
-
-    public void keTopUp(View view) {
-        startActivity(new Intent(MainActivity.this, SaldoActivity.class));
-    }
-
-    public void kePaket(View view) {
-        startActivity(new Intent(MainActivity.this, PaketActivity.class));
+    public void btn_simpan(View view) {
+        startActivity(new Intent(BuatPinActivity.this, KeamananActivity.class));
+        finish();
     }
 }

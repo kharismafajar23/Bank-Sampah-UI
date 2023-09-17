@@ -18,6 +18,6 @@ public class PembayaranBerhasilActivity extends AppCompatActivity {
     }
 
     public void btn_kembali(View view) {
-        startActivity(new Intent(PembayaranBerhasilActivity.this, JemputSampahActivity.class));
+        onBackPressed();
     }
 }

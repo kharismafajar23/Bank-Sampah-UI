@@ -3,34 +3,33 @@ package com.demanganesia.banksampah;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.view.WindowManager;
 
-import com.demanganesia.banksampah.MasukDanDaftar.LoginActivity;
+public class MasukkanPINActivity extends AppCompatActivity {
 
-public class SplashScreenActivity extends AppCompatActivity {
-
-    private int waktu_loading = 2500;
-
-    SharedPreferences onBoardingScreen;
+    private int waktu_loading = 5000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screen);
-
+        setContentView(R.layout.activity_masukkan_pinactivity);
         //menghilangkan status bar
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(getApplicationContext(), OnBoardActivity.class);
-                startActivity(intent);
+                Intent keBuktiPoin = new Intent(MasukkanPINActivity.this, RequestPickupActivity.class);
+                startActivity(keBuktiPoin);
                 finish();
             }
         }, waktu_loading);
+    }
+
+    public void kembali(View view) {
+        onBackPressed();
     }
 }

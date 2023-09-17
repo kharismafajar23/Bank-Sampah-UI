@@ -65,8 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/LLTop"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="28dp"
         android:layout_marginTop="24dp"
+        android:layout_marginRight="28dp"
         android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
         android:drawablePadding="10dp"
         android:drawableTint="@color/main_black"
@@ -75,8 +75,9 @@
         android:textColor="@color/main_black"
         android:textSize="14sp" />
 
+
     <TextView
-        android:id="@+id/TV_tanggal"
+        android:id="@+id/TV_antar_rumah"
         style="@style/tgl_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,10 +85,37 @@
         android:layout_marginLeft="28dp"
         android:layout_marginTop="20dp"
         android:padding="12dp"
+        android:text="Antar Rumah"
+        android:textColor="@color/putih" />
+
+    <TextView
+        android:onClick="keAmbilSendiri"
+        android:id="@+id/TV_ambil_sendiri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_filter"
+        android:layout_alignLeft="@+id/TV_antar_rumah"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_tab_nonaktif"
+        android:padding="12dp"
+        android:text="Ambil Sendiri"
+        android:textColor="@color/main_black" />
+
+    <TextView
+        android:id="@+id/TV_tanggal"
+        style="@style/tgl_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_antar_rumah"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
         android:text="Oktober 2022"
         android:textColor="@color/putih" />
 
     <LinearLayout
+        android:onClick="keNotaHadiahAntar"
         android:id="@+id/list1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

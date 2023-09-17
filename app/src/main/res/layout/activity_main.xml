@@ -124,7 +124,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:onClick="keTopUp">
 
                 <ImageView
                     android:src="@drawable/ic_top_up"
@@ -353,6 +354,7 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <Button
+                            android:onClick="kePaket"
                             android:layout_width="67dp"
                             android:layout_height="26dp"
                             android:layout_gravity="bottom|center_horizontal"

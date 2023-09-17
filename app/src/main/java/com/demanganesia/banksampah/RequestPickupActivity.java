@@ -30,6 +30,6 @@ public class RequestPickupActivity extends AppCompatActivity {
     }
 
     public void btn_kembali(View view) {
-        startActivity(new Intent(RequestPickupActivity.this, JemputSampahActivity.class));
+        startActivity(new Intent(RequestPickupActivity.this, PaketActivity.class));
     }
 }

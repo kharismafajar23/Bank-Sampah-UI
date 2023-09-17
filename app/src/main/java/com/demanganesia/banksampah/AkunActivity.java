@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.demanganesia.banksampah.MasukDanDaftar.LoginActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class AkunActivity extends AppCompatActivity {
@@ -82,5 +83,10 @@ public class AkunActivity extends AppCompatActivity {
     }
 
     public void keNotifikasi(View view) {
+    }
+
+    public void keluar(View view) {
+        startActivity(new Intent(AkunActivity.this, LoginActivity.class));
+        finish();
     }
 }

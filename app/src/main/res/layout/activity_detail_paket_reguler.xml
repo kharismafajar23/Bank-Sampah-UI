@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_screen"
-    tools:context=".Detail_Paket_Activity">
+    tools:context=".DetailPaketRegulerActivity">
 
     <View
         android:id="@+id/view"
@@ -160,7 +159,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/inter_bold"
                     android:textColor="@color/main_black"
-                    android:text="Rp 0"
+                    android:text="Rp 50000"
                     android:textSize="16sp" />
 
 
@@ -195,7 +194,7 @@
                     android:layout_height="wrap_content"/>
 
                 <ImageView
-                    android:src="@drawable/ic_trash_premium"
+                    android:src="@drawable/ic_paket_reguler"
                     android:layout_width="25dp"
                     android:layout_height="25dp"/>
             </LinearLayout>
@@ -235,7 +234,7 @@
                     android:layout_height="34dp"/>
 
                 <TextView
-                    android:id="@+id/TV_waktu_penjemputan"
+                    android:id="@+id/tv_waktu_penjemputan"
                     android:text="3x Per Minggu"
                     android:textSize="15sp"
                     android:textColor="@color/main_black"
@@ -280,7 +279,7 @@
                     android:layout_height="34dp"/>
 
                 <TextView
-                    android:id="@+id/TV_durasi"
+                    android:id="@+id/tv_durasi"
                     android:text="1 bulan"
                     android:textSize="15sp"
                     android:textColor="@color/main_black"
@@ -356,4 +355,5 @@
             android:text="Batal" />
 
     </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

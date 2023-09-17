@@ -60,26 +60,6 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="keUbahPIN">
-
-            <TextView
-                style="@style/title_screen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ubah PIN" />
-
-            <ImageView
-                android:src="@drawable/ic_next"
-                android:layout_alignParentEnd="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"/>
-
-        </RelativeLayout>
-
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

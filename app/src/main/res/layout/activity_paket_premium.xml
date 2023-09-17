@@ -80,6 +80,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
+            android:onClick="keTopUp"
             android:id="@+id/btn_topup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -547,6 +548,7 @@
                         android:layout_height="wrap_content"/>
 
                     <Button
+                        android:onClick="kePaketPremiumB"
                         android:text="Pilih"
                         style="@style/button_paket"
                         android:layout_gravity="center"
@@ -669,6 +671,7 @@
                         android:layout_height="wrap_content"/>
 
                     <Button
+                        android:onClick="kePaketPremiumC"
                         android:text="Pilih"
                         style="@style/button_paket"
                         android:layout_gravity="center"
@@ -783,6 +786,7 @@
                         android:layout_height="wrap_content"/>
 
                     <Button
+                        android:onClick="kePaketPremiumD"
                         android:text="Pilih"
                         style="@style/button_paket"
                         android:layout_gravity="center"

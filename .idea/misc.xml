@@ -24,25 +24,34 @@
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/drawable/white_button.xml" value="0.1225" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_akun.xml" value="0.25" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_bottom_nav.xml" value="0.3671875" />
+        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_buat_pin.xml" value="0.2046875" />
+        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_buat_pinactivity.xml" value="0.2046875" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_bukti_ambil_hadiah.xml" value="0.25" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_bukti_hadiah_antar.xml" value="0.2046875" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_bukti_poin.xml" value="0.2046875" />
+        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_bukti_poin_riwayat_bank_sampah.xml" value="0.2046875" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_daftar.xml" value="0.3671875" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_data_profil.xml" value="0.25" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_detail_paket.xml" value="0.25" />
+        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_detail_paket_reguler.xml" value="0.25" />
+        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_detail_riwayat_sampah_harian.xml" value="0.2046875" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_faq.xml" value="0.22" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_fullscreen.xml" value="0.19114583333333332" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_history_tukar_poin.xml" value="0.25" />
+        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_history_tukar_poin_ambil.xml" value="0.2046875" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_isi_saldo.xml" value="0.22" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_isi_saldo_detail.xml" value="0.25" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_jemput_atau_ambil.xml" value="0.25" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_jemput_sampah.xml" value="0.2046875" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_kategori_bank_sampah.xml" value="0.22" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_keamanan.xml" value="0.25" />
-        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_lokasi.xml" value="0.3671875" />
+        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_lokasi.xml" value="0.22" />
+        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_lupa_password.xml" value="0.18" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_main2.xml" value="0.2046875" />
+        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_masukkan_pinactivity.xml" value="0.2046875" />
+        <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_nota_hadiah_ambil.xml" value="0.2046875" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_nota_hadiah_antar.xml" value="0.2046875" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_on_board.xml" value="0.25" />
         <entry key="..\:/edit/2023/30. Bank Sampah/apps/app/src/main/res/layout/activity_paket.xml" value="0.25" />

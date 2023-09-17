@@ -23,5 +23,6 @@ public class UbahPasswordActivity extends AppCompatActivity {
 
     public void btnSImpan(View view) {
         startActivity(new Intent(UbahPasswordActivity.this, AkunActivity.class));
+        finish();
     }
 }

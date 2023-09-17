@@ -67,4 +67,8 @@ public class TukarPointActivity extends AppCompatActivity {
     public void keRiwayatTukarPoin(View view) {
         startActivity(new Intent(TukarPointActivity.this, HistoryTukarPoinActivity.class));
     }
+
+    public void keJemputAtauAmbil(View view) {
+        startActivity(new Intent(TukarPointActivity.this, JemputAtauAmbilActivity.class));
+    }
 }

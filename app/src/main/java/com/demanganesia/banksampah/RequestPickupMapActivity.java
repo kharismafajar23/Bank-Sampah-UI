@@ -22,7 +22,8 @@ public class RequestPickupMapActivity extends AppCompatActivity {
     }
 
     public void keJemputSampah(View view) {
-        startActivity(new Intent(RequestPickupMapActivity.this, JemputSampahActivity.class));
+        startActivity(new Intent(RequestPickupMapActivity.this, Reg_Pickup_2_Activity.class));
+        finish();
     }
 
     public void btn_batal(View view) {

@@ -68,8 +68,4 @@ public class KeamananActivity extends AppCompatActivity {
     public void keUbahPassword(View view) {
         startActivity(new Intent(KeamananActivity.this, UbahPasswordActivity.class));
     }
-
-    public void keUbahPIN(View view) {
-        startActivity(new Intent(KeamananActivity.this, BuatPINActivity.class));
-    }
 }

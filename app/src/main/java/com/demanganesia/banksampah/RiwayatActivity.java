@@ -65,4 +65,8 @@ public class RiwayatActivity extends AppCompatActivity {
         startActivity(new Intent(RiwayatActivity.this, RiwayatSampahHarianActivity.class));
         finish();
     }
+
+    public void keDetailRiwayatBankSampah(View view) {
+        startActivity(new Intent(this, BuktiPoinRiwayatBankSampahActivity.class));
+    }
 }

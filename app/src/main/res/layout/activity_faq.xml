@@ -42,15 +42,14 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:onClick="keUbahPassword">
+            android:layout_marginBottom="30dp">
 
             <TextView
                 style="@style/title_screen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Apa itu Bank Sampah"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:text="Apa itu Bank Sampah" />
 
             <ImageView
                 android:src="@drawable/ic_next"
@@ -64,8 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
-            android:layout_gravity="center_horizontal"
-            android:onClick="keUbahPIN">
+            android:layout_gravity="center_horizontal">
 
             <TextView
                 style="@style/title_screen"
@@ -84,8 +82,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="keUbahPIN">
+            android:layout_height="wrap_content">
 
             <TextView
                 style="@style/title_screen"

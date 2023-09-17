@@ -19,5 +19,6 @@ public class BuktiPoinActivity extends AppCompatActivity {
 
     public void kemabli_home(View view) {
         startActivity(new Intent(BuktiPoinActivity.this, MainActivity.class));
+        finish();
     }
 }

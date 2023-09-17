@@ -71,5 +71,6 @@ public class DataProfilActivity extends AppCompatActivity {
 
     public void btnSimpan(View view) {
         startActivity(new Intent(DataProfilActivity.this, AkunActivity.class));
+        finish();
     }
 }

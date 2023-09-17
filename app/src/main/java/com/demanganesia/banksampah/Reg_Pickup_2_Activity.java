@@ -18,6 +18,11 @@ public class Reg_Pickup_2_Activity extends AppCompatActivity {
     }
 
     public void btn_oke(View view) {
-        startActivity(new Intent(Reg_Pickup_2_Activity.this, MainActivity.class));
+        startActivity(new Intent(Reg_Pickup_2_Activity.this, JemputSampahActivity.class));
+        finish();
+    }
+
+    public void btn_no(View view) {
+        onBackPressed();
     }
 }

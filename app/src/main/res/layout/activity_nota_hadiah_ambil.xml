@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_screen"
-    tools:context=".NotaHadiahAntarActivity">
+    tools:context=".NotaHadiahAmbilActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         app:layout_constraintTop_toTopOf="parent"
@@ -63,7 +63,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/bg_white"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:paddingTop="25dp"
@@ -145,14 +144,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"/>
-
-                    <TextView
-                        android:text="Status : sudah berhasil ditukar"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/inter_medium"
-                        android:textColor="@color/main_black"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
                 </LinearLayout>
 
             </LinearLayout>

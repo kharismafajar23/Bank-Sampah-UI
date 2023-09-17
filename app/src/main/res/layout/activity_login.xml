@@ -75,7 +75,8 @@
             android:layout_gravity="right"
             android:layout_marginTop="24dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:onClick="keLupaPassword"/>
 
         <Button
             android:text="Login"

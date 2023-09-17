@@ -62,6 +62,10 @@ public class IsiSaldoDetailActivity extends AppCompatActivity {
     }
 
     public void oke(View view) {
-        startActivity(new Intent(IsiSaldoDetailActivity.this, SaldoActivity.class));
+        Number saldo = 50000;
+        Intent keSaldoAct = new Intent(this, SaldoActivity.class);
+        keSaldoAct.putExtra("saldoTopUp", saldo.toString());
+        startActivity(keSaldoAct);
+        finish();
     }
 }

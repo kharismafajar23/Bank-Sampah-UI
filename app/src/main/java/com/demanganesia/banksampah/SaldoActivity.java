@@ -1,5 +1,7 @@
 package com.demanganesia.banksampah;
 
+import static android.text.TextUtils.concat;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,12 +10,14 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class SaldoActivity extends AppCompatActivity {
 
     BottomNavigationView bottomBar;
+    TextView TVSaldo, TVSaldoTunai, TVMetode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +27,22 @@ public class SaldoActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         bottomBar = findViewById(R.id.bottomBar);
+        TVSaldo = findViewById(R.id.TV_saldo);
+        TVSaldoTunai = findViewById(R.id.TV_saldo_tunai);
+        TVMetode = findViewById(R.id.metode);
+
+        Number saldo = 50000;
+        String saldoTopUpString = getIntent().getStringExtra("saldoTopUp");
+
+        if (saldoTopUpString == null) {
+            TVSaldo.setText("Rp " + saldo);
+            TVSaldoTunai.setText(saldo.toString());
+        } else {
+            int saldoTopUpInt = Integer.valueOf(saldoTopUpString);
+            Number hasil = saldoTopUpInt + 50000;
+            TVSaldo.setText("Rp " + hasil);
+            TVSaldoTunai.setText(hasil.toString());
+        }
 
         bottomBar.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

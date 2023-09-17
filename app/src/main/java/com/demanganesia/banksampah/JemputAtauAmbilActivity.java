@@ -66,8 +66,10 @@ public class JemputAtauAmbilActivity extends AppCompatActivity {
     }
 
     public void keAmbilHadiah(View view) {
-    }
+
+        startActivity(new Intent(JemputAtauAmbilActivity.this, BuktiAmbilHadiahActivity.class));    }
 
     public void keAntarHadiah(View view) {
+        startActivity(new Intent(JemputAtauAmbilActivity.this, BuktiHadiahAntarActivity.class));
     }
 }
